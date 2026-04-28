@@ -30,7 +30,7 @@ export default function AboutPage() {
           description="I build dependable, modern web applications with strong attention to architecture, user experience, and delivery quality."
         />
 
-        <article className="rounded-2xl border border-slate-200 bg-white p-6 text-sm leading-7 text-slate-700 sm:text-base">
+        <article className="rounded-2xl border border-slate-200 p-6 text-sm leading-7 sm:text-base">
           <p>
             I&apos;m {siteMeta.name}, a {siteMeta.role} working with Next.js, React.js, Node.js, Express.js, MongoDB, and PostgreSQL.
             My work spans complete product development, from frontend systems and backend APIs to deployment on modern hosting platforms.
@@ -43,8 +43,8 @@ export default function AboutPage() {
 
         <div className="grid gap-4 md:grid-cols-2">
           {techGroups.map((group) => (
-            <article key={group.title} className="rounded-2xl border border-slate-200 bg-white p-5">
-              <h2 className="text-base font-semibold text-slate-900">{group.title}</h2>
+            <article key={group.title} className="rounded-2xl border border-slate-200 p-5">
+              <h2 className="text-base font-semibold">{group.title}</h2>
               <div className="mt-3 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <Tag key={item}>{item}</Tag>
